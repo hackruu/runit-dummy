@@ -1,0 +1,4 @@
+#!/bin/sh
+name=`basename $(dirname $(pwd)/fake)` # ugly hack
+
+echo "TODO: put your stuff here!" # send mail with sendmail for example

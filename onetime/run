@@ -1,0 +1,16 @@
+#!/bin/sh
+TIME="Finished. Process took %E. %P CPU was eaten. %MK memory was used." # time stuff
+
+name=`basename $(dirname $(pwd)/fake)` # ugly hack
+user="nobody:nogroup"
+mem="67108864" # 64mb
+workingdir="/tmp"
+command="/bin/sleep 3"
+
+exec 2>&1
+
+echo starting $name...
+export TIME
+set -x
+cd $workingdir
+exec chpst -u $user -m $mem -v time $command

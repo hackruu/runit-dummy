@@ -1,0 +1,6 @@
+#!/bin/bash
+name=`basename $(dirname $(pwd))`
+mkdir -p /var/log/$name/
+exec 2>&1
+
+exec /usr/bin/svlogd -tt /var/log/$name/

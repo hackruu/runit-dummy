@@ -1,0 +1,4 @@
+#!/bin/sh
+name=`basename $(dirname $(pwd)/fake)` # ugly hack
+
+/usr/bin/sv stop $name >/dev/null 2>/dev/null # silently stop runit job after single run
