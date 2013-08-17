@@ -2,9 +2,9 @@ runit-dummy
 ===========
 
 Dummy runit service directories examples for quick and easy start with runit supervisor. 
-Templates provide log directory creation, logging, memory and user restrictions and process memory/processor usage information.
+Templates provide log directory creation, logging, memory and user restrictions and process' memory/processor usage information.
 
-Currently there is two examples:
+Currently there are two examples:
 
 - **service** - runit service template for running service and restarting it forever.
 
